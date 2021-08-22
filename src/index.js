@@ -17,7 +17,7 @@ module.exports = function towelSort (matrix) {
       } else g.push(matrix[i]);
 
     }
-    if (matrix == 0){
+    if (matrix == ['']){
       return [];
     }
   return (g.flat())
