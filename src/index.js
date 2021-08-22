@@ -8,18 +8,40 @@
 // ];
 
 module.exports = function towelSort (matrix) {
+  let g = [];
+  if (matrix.length == 0){
+    return [ ];
+    }
+    for (let i = 0; i < matrix.length; i++) {
+      if (i % 2 !== 0) {
+        g.push((matrix[i]).reverse());
+      } else g.push(matrix[i]);
 
-for (let i =0; i<matrix.length; i++) {
-  for (let j = 0; j < matrix[i].length; j++){
-    let columnIndex = i % 2 ===0
-    ? j 
-    : (matrix[i].length -j -1);
-    console.log( matrix[i] [columnIndex])
-  } 
-  if (matrix = [" "]){
-  return [ ]
-  }
+    }
+  
 }    
 
-  return [ ];
+  return (g.flat);
+
+
+module.exports = function towelSort (matrix) {
+  try{
+        if(matrix.length==0){
+             return [];
+            }
+            let flattend = [];
+            (function flat(matrix){
+              for (let i = 0; i < matrix.length; i++) {
+                if(i%2!=0){
+                  matrix[i].reverse();
+                }
+                  flattend.push(matrix[i]);
+              }
+            })(matrix);
+            return flattend.flat();
+
 }
+    return [];
+}
+
+
