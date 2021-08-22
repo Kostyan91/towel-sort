@@ -16,7 +16,10 @@ for (let i =0; i<matrix.length; i++) {
     : (matrix[i].length -j -1);
     console.log( matrix[i] [columnIndex])
   } 
+  if (matrix = [" "]){
+  return [ ]
+  }
 }    
 
-  //return [];
+  return [ ];
 }
