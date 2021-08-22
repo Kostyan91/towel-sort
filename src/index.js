@@ -10,7 +10,7 @@
 module.exports = function towelSort (matrix) {
   let g = [];
   
-    if (typeof(matrix) == !Array || matrix == null) return g
+    if (typeof(matrix) == !Array || matrix == ['']) return g
     for (let i = 0; i < matrix.length; i++) {
       if (i % 2 !== 0) {
         g.push((matrix[i]).reverse());
@@ -20,7 +20,7 @@ module.exports = function towelSort (matrix) {
     // if (matrix.length == ['']){
     //   return [];
     // }
-  return (g.flat())
+  return g
   }
 
 
